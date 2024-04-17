@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人網頁排版</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  </head>
+  <body>
+      <nav>
+      <a href="#about">關於我</a>
+      <a href="#skills">專業技能</a>
+      <a href="#experience">個人經歷</a>
+      <a href="#interests">社團活動</a>
+    </nav>
+
+    <main>
+      <article>
+        <section id="about" class="cd table" >
+          <h2>關於我</h2>
+          <img src="image/me.jpg" width="200" height="200"  style="border-radius: 50%;" />
+          <h3>
+          <table >
+            <tr>
+              <td>姓名:曾元鼎</td>
+              <td>出生日期:1月18日</td>
+            </tr>
+            <tr>
+              <td>科系:資訊管理系  </td>
+              <td>血型:B型</td>
+            </tr>
+            <tr>
+              <td>星座:摩羯座</td>
+              <td>興趣:打棒球</td>
+            </tr>
+            <tr>
+              <td colspan="2">標語:An ounce of prevention is worth a pound of cure.</td>
+            </tr>
+          </table>
+        </h3>
+        
+        </section>
+
+        <section id="skills" class="cd card01" >
+          <h2>專業技能</h2>          
+          <p >
+            
+            <div class="pie ani" style="--percentage: 70; --color: #cfbaf0;">70%<br>python</div>
+            <div class="pie ani" style="--percentage: 60; --color: #cfbaf0;">60%<br>java</div>
+            <div class="pie ani" style="--percentage: 70; --color: #cfbaf0;">70%<br>html</div>
+            <div class="pie ani" style="--percentage: 50; --color: #cfbaf0;">50%<br>css</div>
+          </p>
+        </section>
+        <section id="experience" class="cd">
+          <h2>個人經歷</h2>
+          <img src="image/Network Schedule.jpg" width="400" height="185" />
+          <h3>
+            大二上網程專題所做的專題報告<br><br></h3>
+          <h4>  
+            透過甲乙班的聯合報告，了解到html跟資料庫的連接，
+            在與隊友的合作下，完成了這個困難的期末專案，希望這學期的期末專案也能順利完成。
+          </h4>
+        </section>
+        <section  class="cd">
+          <h2>個人經歷</h2>
+          <img src="image/management.jpg" width="267" height="200" />
+          <h3>
+            大一上的管理學<br><br></h3>
+          <h4>
+            管理學的課程，我們這組去到木匠之家幫忙擺攤作義賣，賣那些有人用不到而捐出來的二手用品，
+            了解到做生意是不容易的，在路邊擺攤經過的人大部分都不會特別注意到。
+            
+          </h4>
+        </section>
+        <section id="interests" class="cd">
+          <h2>社團活動</h2>
+          <img src="image/baseball club.jpg" width="300" height="200" />
+          <h3>
+            軟式棒球社<br><br></h3>
+          <h4>
+            從高中開始加入棒球社，學習打擊和守備的技巧，
+            有時候會有練球和參加比賽，在參與比賽的過程中學習經驗，
+            過程中有快樂也有辛苦，但我很珍惜每次打球的機會。
+                        
+          </h4>
+        </section>
+      </article>
+
+      </main>
+    <div class="clearfix"></div>
+    <footer>
+      <h4>聯絡方式</h4>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/_andy_tseng" target="_blank" rel="noopener noreferrer">
+          <span class="icon-wrapper"><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="mailto:a89668881@gmail.com">
+          <span class="icon-wrapper"><i class="far fa-envelope"></i></span>
+        </a>
+        <a href="http://line.me/ti/p/aaronjudge930118" target="_blank" rel="noopener noreferrer">
+          <span class="icon-wrapper"><i class="fab fa-line"></i></span>
+        </a>
+      </div>
+    </footer>
+    
+    <button onclick="window.scrollTo(0, 0)" style="display: none; position: fixed; bottom: 20px; right: 20px; background: transparent; border: none;">
+      <img src="image/top.png" alt="返回頂部" style="width: 40px; height: 40px;">
+    </button>
+
+    <script>
+     
+      window.onscroll = function() {
+        if (document.documentElement.scrollTop > 100) {
+          document.querySelector('button').style.display = 'block';
+        } else {
+          document.querySelector('button').style.display = 'none';
+        }
+      };
+    </script>
+  </body>
+</html>
